@@ -1,0 +1,143 @@
+.master {
+    display: grid;
+}
+
+
+.header {
+    background-color: lightblue;
+    width: auto;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instagram {
+    background-image: url(https://image.flaticon.com/icons/png/512/87/87390.png);
+    background-size: cover;
+    height: 2em;
+    width: 2em;
+    margin-right: 5em;
+}
+
+.work {
+    margin-left: 5em;
+}
+
+
+
+.grid-item {
+    background-color: thistle;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"hi a"                  
+                        "im code"
+                        "roo student"
+                        "aside aside";
+    justify-self: center;
+    background-color: yellow;
+    height: 40em;
+    width: 45em;
+    padding: 1em;
+    margin-top: 5em;
+}
+
+.main .hi {
+    background-color: turquoise;
+    grid-column-start: hi;
+    grid-column-end: hi;
+}
+
+.main .im {
+    background-color: lightgray;
+    grid-column-start: im;
+    grid-column-end: im;
+}
+
+.main .roo {
+    background-color: lightgoldenrodyellow;
+    grid-column-start: roo;
+    grid-column-end: roo;
+}
+
+.main .a {
+    background-color:lightpink;
+    grid-column-start: a;
+    grid-column-end: a;
+}
+
+.main .code {
+    background-color: lightsalmon;
+    grid-column-start: code;
+    grid-column-end: code;
+}
+
+.main .student {
+    background-color: red;
+    grid-column-start: student;
+    grid-column-end: student;
+}
+
+.main .aside {
+    background-color: lightsteelblue;
+    grid-column-start: aside;
+    grid-column-end: aside;
+}
+
+/* Tablets and under max-width: 768px */
+@media (max-width: 768px) {
+    .header {
+        height: 3em;
+        width: 48em;
+}
+
+    .main {
+        height: 70em;
+        width: 40em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .hi {
+        height: 10em;
+        width: 40em;
+    }
+
+    .main .im {
+        height: 10em;
+        width: 40em;
+    }
+
+    .main .roo {
+        height: 10em;
+        width: 40em;
+    }
+
+    .main .a {
+        height: 10em;
+        width: 40em;
+    }
+
+    .main .code {
+        height: 10em;
+        width: 40em;
+    }
+
+    .main .student {
+        height: 10em;
+        width: 40em;
+    }
+
+    .main .aside {
+        height: 10em;
+        width: 40em;
+    }
+}
+
+
+/* Mobile max-width: 320px;*/
