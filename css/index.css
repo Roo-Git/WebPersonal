@@ -44,49 +44,88 @@
     width: 45em;
     padding: 1em;
     margin-top: 5em;
+    
 }
 
 .main .hi {
     background-color: turquoise;
     grid-column-start: hi;
     grid-column-end: hi;
+    font-size: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .main .im {
     background-color: lightgray;
     grid-column-start: im;
     grid-column-end: im;
+    font-size: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .main .roo {
     background-color: lightgoldenrodyellow;
     grid-column-start: roo;
     grid-column-end: roo;
+    font-size: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .main .a {
     background-color:lightpink;
     grid-column-start: a;
     grid-column-end: a;
+    font-size: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .main .code {
     background-color: lightsalmon;
     grid-column-start: code;
     grid-column-end: code;
+    font-size: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .main .student {
     background-color: red;
     grid-column-start: student;
     grid-column-end: student;
+    font-size: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .main .aside {
     background-color: lightsteelblue;
     grid-column-start: aside;
     grid-column-end: aside;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 3;
 }
+
 
 
 
