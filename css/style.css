@@ -18,3 +18,12 @@ a {
     color: #333;
 }
 
+.footer {
+    background-color: white;
+    width: auto;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
