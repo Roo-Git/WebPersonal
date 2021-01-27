@@ -18,6 +18,7 @@
     height: 2em;
     width: 2em;
     margin-right: 5em;
+    margin-top: 0.6em;
 }
 
 .work {
@@ -134,8 +135,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    animation: a 3.5s;
+    animation: a 3s, right-to-left 5s ease-in-out forwards;
 }
+
 
 @keyframes a {
     from {
@@ -143,6 +145,12 @@
     }
     to {
         opacity: 0;
+    }
+}
+
+@keyframes right-to-left {
+    0% {
+        transform: translateX(100%)
     }
 }
 
@@ -198,7 +206,7 @@
     line-height: 2;
     animation: aside 5s;
     margin-top: 2em;
-    color: lightskyblue;
+    color: blue;
 }
 
 @keyframes aside {
