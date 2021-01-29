@@ -10,11 +10,11 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
-    line-height: 2;           /* establece la altura de una casilla remarcada por líneas. */
+    line-height: 2;           
 }
 
 a {
-    text-decoration: none;      /* Quitar decoración de los enlaces */
+    text-decoration: none;      
     color: #333;
 }
 
@@ -195,3 +195,1005 @@ a {
     font-size: 0.7em;
     text-align: center;
 }
+
+/* Responsive Designe - MOBILE FIRST */
+
+/* 420px */
+
+@media (min-width: 420px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #333;
+        line-height: 2;           
+    }
+    
+    a {
+        text-decoration: none;      
+        color: #333;
+    }
+    
+    
+    .master {
+        width: 100%;
+        height: 35.5em;
+        display: grid;
+    }
+    
+    .header {
+        width: 100%;
+        height: 5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .home, .aboutMe, .contact {
+        color: #0084ff;
+        font-weight: bold;
+    }
+    
+    .home:hover, .aboutMe:hover, .contact:hover {
+        color:#0084ff;
+    }
+    
+    .instagram {
+        background-image: url(https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png);
+        background-size: cover;
+        height: 2em;
+        width: 2em;
+    
+    }
+    
+    .main {
+        width: 100%;
+        height: 25em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "hi a"
+                                "im code"
+                                "roo student"
+                                "aside aside";
+        justify-self: center; /*wtf*/
+    }
+    
+    .main .hi {
+        font-size: 2em;
+        border: solid #0084ff 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: hi 3s;
+        margin: 0.5em;
+    }
+    
+    @keyframes hi {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .main .im {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: im 3s;
+        margin: 0.5em;
+    }
+    
+    @keyframes im {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .roo {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: im 2.6s;
+        margin: 0.5em;
+    }
+    
+    @keyframes roo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    .main .a {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: a 3s, right-to-left 5s ease-in-out forwards;
+    }
+    
+    @keyframes a {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    @keyframes rigth-to-left {
+        0% {
+            transform: translateX(100%);
+        }
+    }
+    
+    .main .code {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: code 1.5s;
+    }
+    
+    @keyframes code {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .student {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: student 4.5s;
+    }
+    
+    @keyframes student {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .aside {
+        grid-column-start: aside;
+        grid-column-end: aside;
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #0084ff;
+        margin: 0.3em;
+    }
+    
+    .footer {
+        font-size: 0.7em;
+        text-align: center;
+    }
+  }
+
+/* 768px */
+
+@media (min-width: 768px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #333;
+        line-height: 2;           
+    }
+    
+    a {
+        text-decoration: none;      
+        color: #333;
+    }
+    
+    
+    .master {
+        width: 100%;
+        height: 64em;
+        display: grid;
+    }
+    
+    .header {
+        width: 100%;
+        height: 8em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .home, .aboutMe, .contact {
+        color: #0084ff;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    
+    .home:hover, .aboutMe:hover, .contact:hover {
+        color:#0084ff;
+    }
+    
+    .instagram {
+        background-image: url(https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png);
+        background-size: cover;
+        height: 3em;
+        width: 3em;
+    
+    }
+    
+    .main {
+        width: 100%;
+        height: 50em;   /*OJO*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "hi a"
+                                "im code"
+                                "roo student"
+                                "aside aside";
+        justify-self: center; /*wtf*/
+    }
+    
+    .main .hi {
+        font-size: 4em;
+        border: solid #0084ff 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: hi 3s;
+        margin: 0.5em;
+    }
+    
+    @keyframes hi {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .main .im {
+        font-size: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: im 3s;
+        margin: 0.5em;
+    }
+    
+    @keyframes im {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .roo {
+        font-size: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: im 2.6s;
+        margin: 0.5em;
+    }
+    
+    @keyframes roo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    .main .a {
+        font-size: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: a 3s, right-to-left 5s ease-in-out forwards;
+    }
+    
+    @keyframes a {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    @keyframes rigth-to-left {
+        0% {
+            transform: translateX(100%);
+        }
+    }
+    
+    .main .code {
+        font-size: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: code 1.5s;
+    }
+    
+    @keyframes code {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .student {
+        font-size: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: student 4.5s;
+    }
+    
+    @keyframes student {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .aside {
+        grid-column-start: aside;
+        grid-column-end: aside;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #0084ff;
+        margin: 0.3em;
+    }
+    
+    .footer {
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
+
+/* 1024px */
+
+@media (min-width: 1024px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #333;
+        line-height: 2;           
+    }
+    
+    a {
+        text-decoration: none;      
+        color: #333;
+    }
+    
+    
+    .master {
+        width: 100%;
+        height: 93.75em;
+        display: grid;
+    }
+    .header {
+        width: 100%;
+        height: 6em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .home, .aboutMe, .contact {
+        color: #0084ff;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    
+    .home:hover, .aboutMe:hover, .contact:hover {
+        color:#0084ff;
+    }
+    
+    .instagram {
+        background-image: url(https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png);
+        background-size: cover;
+        height: 3em;
+        width: 3em;
+    
+    }
+    
+    .main {
+        width: 100%;
+        height: 70em;   /*OJO* +20*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "hi a"
+                                "im code"
+                                "roo student"
+                                "aside aside";
+        justify-self: center; /*wtf*/
+    }
+    
+    .main .hi {
+        font-size: 7em;
+        border: solid #0084ff 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: hi 3s;
+        margin: 0.5em;
+    }
+    
+    @keyframes hi {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .main .im {
+        font-size: 7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: im 3s;
+        margin: 0.5em;
+    }
+    
+    @keyframes im {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .roo {
+        font-size: 7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: im 2.6s;
+        margin: 0.5em;
+    }
+    
+    @keyframes roo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    .main .a {
+        font-size: 7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: a 3s, right-to-left 5s ease-in-out forwards;
+    }
+    
+    @keyframes a {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    @keyframes rigth-to-left {
+        0% {
+            transform: translateX(100%);
+        }
+    }
+    
+    .main .code {
+        font-size: 7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: code 1.5s;
+    }
+    
+    @keyframes code {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .student {
+        font-size: 7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: student 4.5s;
+    }
+    
+    @keyframes student {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .aside {
+        grid-column-start: aside;
+        grid-column-end: aside;
+        font-size: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #0084ff;
+        margin: 0.3em;
+    }
+    
+    .footer {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 10em
+    }
+}
+
+/* 1200px */
+
+@media (min-width: 1200px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #333;
+        line-height: 2;           
+    }
+    
+    a {
+        text-decoration: none;      
+        color: #333;
+    }
+    
+    
+    .master {
+        width: 100%;
+        height: 50em;
+        display: grid;
+    }
+    .header {
+        width: 100%;
+        height: 4em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .home, .aboutMe, .contact {
+        color: #0084ff;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    
+    .home:hover, .aboutMe:hover, .contact:hover {
+        color:#0084ff;
+    }
+    
+    .instagram {
+        background-image: url(https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png);
+        background-size: cover;
+        height: 3em;
+        width: 3em;
+    
+    }
+    
+    .main {
+        width: 100%;
+        height: 50em;   /*OJO* +20*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "hi a"
+                                "im code"
+                                "roo student"
+                                "aside aside";
+        justify-self: center; /*wtf*/
+    }
+    
+    .main .hi {
+        font-size: 2em;
+        border: solid #0084ff 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: hi 3s;
+        margin: 0.5em;
+    }
+    
+    @keyframes hi {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .main .im {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: im 3s;
+        margin: 0.5em;
+    }
+    
+    @keyframes im {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .roo {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: im 2.6s;
+        margin: 0.5em;
+    }
+    
+    @keyframes roo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    .main .a {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: a 3s, right-to-left 5s ease-in-out forwards;
+    }
+    
+    @keyframes a {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    @keyframes rigth-to-left {
+        0% {
+            transform: translateX(100%);
+        }
+    }
+    
+    .main .code {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: code 1.5s;
+    }
+    
+    @keyframes code {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .student {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: student 4.5s;
+    }
+    
+    @keyframes student {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .aside {
+        grid-column-start: aside;
+        grid-column-end: aside;
+        font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #0084ff;
+        margin: 0.3em;
+    }
+    
+    .footer {
+        font-size: 1em;
+        text-align: center;
+
+    }
+}
+
+/* 1980px */
+
+@media (min-width: 1920px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #333;
+        line-height: 2;           
+    }
+    
+    a {
+        text-decoration: none;      
+        color: #333;
+    }
+    
+    
+    .master {
+        width: 100%;
+        height: 61em;
+        display: grid;
+    }
+    .header {
+        width: 100%;
+        height: 12em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .home, .aboutMe, .contact {
+        color: #0084ff;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    
+    .home:hover, .aboutMe:hover, .contact:hover {
+        color:#0084ff;
+    }
+    
+    .instagram {
+        background-image: url(https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png);
+        background-size: cover;
+        height: 3em;
+        width: 3em;
+    
+    }
+    
+    .main {
+        width: 100%;
+        height: 45em;   /*OJO* +20*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "hi a"
+                                "im code"
+                                "roo student"
+                                "aside aside";
+        justify-self: center; /*wtf*/
+    }
+    
+    .main .hi {
+        font-size: 4em;
+        border: solid #0084ff 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: hi 3s;
+        margin: 0.5em;
+    }
+    
+    @keyframes hi {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .main .im {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: im 3s;
+        margin: 0.5em;
+    }
+    
+    @keyframes im {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .roo {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: im 2.6s;
+        margin: 0.5em;
+    }
+    
+    @keyframes roo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    .main .a {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: a 3s, right-to-left 5s ease-in-out forwards;
+    }
+    
+    @keyframes a {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    @keyframes rigth-to-left {
+        0% {
+            transform: translateX(100%);
+        }
+    }
+    
+    .main .code {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: code 1.5s;
+    }
+    
+    @keyframes code {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .student {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: student 4.5s;
+    }
+    
+    @keyframes student {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .main .aside {
+        grid-column-start: aside;
+        grid-column-end: aside;
+        font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #0084ff;
+        margin: 0.3em;
+    }
+    
+    .footer {
+        font-size: 1em;
+        text-align: center;
+
+    }
+}
+
