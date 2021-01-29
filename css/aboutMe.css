@@ -54,13 +54,17 @@
     justify-content: center;
 }
 
-.imagen {
+.imagenContenedor {
     background-color: beige;
     width: 25%;
     height: 50em;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+img {
+    width: 20em;
 }
 
 .asideAboutMe {
