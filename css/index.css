@@ -225,15 +225,241 @@
 
 /* RESPONSIVE */
 
-/* Móviles en vertical*/
+/* Laptop */
 
-/* @media (max-width: 480px) { 
-    .header {
-        background-color: green;
-        width: 1em;
-        height: 2em;
+.master {
+    display: grid;
+}
+
+
+.header {
+    width: auto;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instagram {
+    background-image: url(https://image.flaticon.com/icons/png/512/87/87390.png);
+    background-size: cover;
+    height: 2.1em;
+    width: 2.1em;
+    margin-right: 5em;
+    margin-top: 0.6em;
+}
+
+.work {
+    margin-left: 1em;
+    color: lightskyblue;
+    font-size: 3em;
+}
+
+.work:hover {
+    color: lightskyblue;
+}
+
+.aboutMe {
+    color: lightskyblue;
+    font-size: 3em;
+}
+
+.aboutMe:hover {
+    color: lightskyblue;
+}
+
+.contact {
+    color: lightskyblue;
+    font-size: 3em;
+}
+
+.contact:hover {
+    color: lightskyblue;
+}
+
+.master {
+    display: grid;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"hi a"                  
+                        "im code"
+                        "roo student"
+                        "aside aside";
+    justify-self: center;
+    height: 20em;
+    width: 45em;
+    padding: 2em;
+    
+}
+
+.main .hi {
+    grid-column-start: hi;
+    grid-column-end: hi;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: hi 3s;
+    border: solid lightskyblue 1em;
+    
+}
+
+@keyframes hi {
+    from {
+        opacity: 0;
     }
-} */
+
+    to {
+        opacity: 1;
+    }
+}
+
+.main .im {
+    grid-column-start: im;
+    grid-column-end: im;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: im 2s;
+}
+
+@keyframes im {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.main .roo {
+    grid-column-start: roo;
+    grid-column-end: roo;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: roo 2.6s;
+}
+
+@keyframes roo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.main .a {
+    grid-column-start: a;
+    grid-column-end: a;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: a 3s, right-to-left 5s ease-in-out forwards;
+}
+
+
+@keyframes a {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes right-to-left {
+    0% {
+        transform: translateX(100%)
+    }
+}
+
+.main .code {
+    grid-column-start: code;
+    grid-column-end: code;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: code 1.5s;
+}
+
+@keyframes code {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.main .student {
+    grid-column-start: student;
+    grid-column-end: student;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: student 4.5s;
+}
+
+@keyframes student {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.main .aside {
+    grid-column-start: aside;
+    grid-column-end: aside;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2;
+    animation: aside 5s;
+    margin-top: 2em;
+    color: rgb(0, 27, 182);
+    font-weight: bold;
+}
+
+@keyframes aside {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.footer {
+    position: relative;
+    margin-top: 42em;
+    margin-left: 43em;
+    font-size: small;
+    font-family: sans-serif;
+}
+ 
  
  
 /* Móviles en horizontal o tablets en vertical */
