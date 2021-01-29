@@ -10,7 +10,7 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
-    line-height: 1.6;           /* establece la altura de una casilla remarcada por líneas. */
+    line-height: 2;           /* establece la altura de una casilla remarcada por líneas. */
 }
 
 a {
@@ -18,13 +18,180 @@ a {
     color: #333;
 }
 
-.footer {
-    background-color: white;
-    width: auto;
+
+.master {
+    width: 100%;
+    height: 35.5em;
+    display: grid;
+}
+
+.header {
+    width: 100%;
     height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.home, .aboutMe, .contact {
+    color: #0084ff;
+    font-weight: bold;
+}
+
+.home:hover, .aboutMe:hover, .contact:hover {
+    color:#0084ff;
+}
+
+.instagram {
+    background-image: url(https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png);
+    background-size: cover;
+    height: 2em;
+    width: 2em;
+
+}
+
+.main {
+    width: 100%;
+    height: 25em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:    "hi a"
+                            "im code"
+                            "roo student"
+                            "aside aside";
+    justify-self: center; /*wtf*/
+}
+
+.main .hi {
+    font-size: 2em;
+    border: solid #0084ff 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6em;
+    animation: hi 3s;
+    margin: 0.5em;
 }
 
+@keyframes hi {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main .im {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: im 3s;
+    margin: 0.5em;
+}
+
+@keyframes im {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.main .roo {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: im 2.6s;
+    margin: 0.5em;
+}
+
+@keyframes roo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+.main .a {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: a 3s, right-to-left 5s ease-in-out forwards;
+}
+
+@keyframes a {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+@keyframes rigth-to-left {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+.main .code {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: code 1.5s;
+}
+
+@keyframes code {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.main .student {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: student 4.5s;
+}
+
+@keyframes student {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.main .aside {
+    grid-column-start: aside;
+    grid-column-end: aside;
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0084ff;
+    margin: 0.3em;
+}
+
+.footer {
+    font-size: 0.7em;
+    text-align: center;
+}
