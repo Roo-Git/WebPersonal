@@ -19,11 +19,6 @@ a {
 }
 
 
-.master {
-    width: 100%;
-    height: 35.5em;
-    display: grid;
-}
 
 .header {
     width: 100%;
@@ -32,23 +27,39 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
 }
 
-.home, .aboutMe, .contact {
-    color: #0084ff;
-    font-weight: bold;
-}
-
-.home:hover, .aboutMe:hover, .contact:hover {
-    color:#0084ff;
-}
-
-.instagram {
+.instagramB {
     background-image: url(https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png);
     background-size: cover;
     height: 2em;
     width: 2em;
 
 }
+
+.mb-3 {
+    width: 100%;
+    height: 20em;
+    margin-top: 5em;
+}
+.email {
+    margin-top: 1em;
+    margin-left: 8em;
+}
+
+.form-control {
+    margin-top: 1em;
+}
+
+.form-text {
+    margin-top: 1em;
+    margin-left: 8em;
+}
+
+.btn {
+    background-color: lightskyblue;
+    border: lightskyblue solid 1em;
+    margin-left: 6em;
+}
+
 

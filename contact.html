@@ -11,20 +11,31 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
 
 </head>
 
 <body>
-    <div class="master">
-        <!-- Header -->
-        <div class="header">
-            <a href="index.html" class="home">Home</a>
-            <a href="about.html" class="aboutMe">About Me</a>
-            <a href="contact.html" class="contact">Contact</a>
-            <a href="https://www.instagram.com/robert.delafuente/" class="instagram"></a>
+
+    <div class="container-fluid">
+        <div class="header row-cols-4">
+          <div class="homeB"><a href="index.html">Home</a></div>
+          <div class="aboutB"><a href="about.html">About Me</a></div>
+          <div class="aboutB"><a href="contact.html">Contact</a></div>
+          <div class="instagramB"><a href="https://www.instagram.com/robert.delafuente/"></a></div>
         </div>
-    </div>
+      </div>
+
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="email">Email:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Contact Me!</div>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
 
 
 
