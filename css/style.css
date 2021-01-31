@@ -88,7 +88,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: im 3s;
+    animation: im 2.6s;
     margin: 0.5em;
 }
 
@@ -106,7 +106,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: im 2.6s;
+    animation: im 3.5s;
     margin: 0.5em;
 }
 
@@ -125,7 +125,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: a 3s, right-to-left 5s ease-in-out forwards;
+    animation: a 4s, right-to-left 5s ease-in forwards;
 }
 
 @keyframes a {
@@ -137,12 +137,6 @@ a {
     }
 }
 
-
-@keyframes rigth-to-left {
-    0% {
-        transform: translateX(100%);
-    }
-}
 
 .main .code {
     font-size: 2em;
@@ -289,7 +283,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: im 3s;
+        animation: im 2.6s;
         margin: 0.5em;
     }
     
@@ -307,7 +301,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: im 2.6s;
+        animation: im 3s;
         margin: 0.5em;
     }
     
@@ -326,7 +320,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: a 3s, right-to-left 5s ease-in-out forwards;
+        animation: a 4s, right-to-left 5s ease-in-out forwards;
     }
     
     @keyframes a {
@@ -489,7 +483,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: im 3s;
+        animation: im 2.6;
         margin: 0.5em;
     }
     
@@ -507,7 +501,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: im 2.6s;
+        animation: im 3.5;
         margin: 0.5em;
     }
     
@@ -526,7 +520,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: a 3s, right-to-left 5s ease-in-out forwards;
+        animation: a 4s, right-to-left 5s ease-in-out forwards;
     }
     
     @keyframes a {
@@ -688,7 +682,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: im 3s;
+        animation: im 2.6s;
         margin: 0.5em;
     }
     
@@ -706,7 +700,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: im 2.6s;
+        animation: im 3s;
         margin: 0.5em;
     }
     
@@ -725,7 +719,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: a 3s, right-to-left 5s ease-in-out forwards;
+        animation: a 4s, right-to-left 5s ease-in-out forwards;
     }
     
     @keyframes a {
@@ -888,7 +882,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: im 3s;
+        animation: im 2.6s;
         margin: 0.5em;
     }
     
@@ -906,7 +900,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: im 2.6s;
+        animation: im 3.5s;
         margin: 0.5em;
     }
     
@@ -925,7 +919,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: a 3s, right-to-left 5s ease-in-out forwards;
+        animation: a 4s, right-to-left 5s ease-in-out forwards;
     }
     
     @keyframes a {
@@ -1088,7 +1082,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: im 3s;
+        animation: im 2.6s;
         margin: 0.5em;
     }
     
@@ -1106,7 +1100,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: im 2.6s;
+        animation: roo 3.5s;
         margin: 0.5em;
     }
     
@@ -1125,7 +1119,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: a 3s, right-to-left 5s ease-in-out forwards;
+        animation: a 4s, right-to-left 5s ease-in-out forwards;
     }
     
     @keyframes a {
