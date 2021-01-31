@@ -201,6 +201,7 @@ a {
 /* 420px */
 
 @media (min-width: 420px) {
+
     * {
         box-sizing: border-box;
         padding: 0;
@@ -227,7 +228,7 @@ a {
     
     .header {
         width: 100%;
-        height: 5em;
+        height: 5m;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
